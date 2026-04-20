@@ -27,30 +27,35 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileMenuBtn.classList.toggle('open');
+            // Change icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
         });
     }
 
-    // 3. Scroll Animations (Intersection Observer)
-    const fadeElements = document.querySelectorAll('.fade-in');
+    // 3. Scroll Animations (.scroll-reveal)
+    const revealElements = document.querySelectorAll('.scroll-reveal');
 
-    const appearOptions = {
+    const revealOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const scrollObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('appear');
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
         });
-    }, appearOptions);
+    }, revealOptions);
 
-    fadeElements.forEach(el => {
-        appearOnScroll.observe(el);
+    revealElements.forEach(el => {
+        scrollObserver.observe(el);
     });
 
     // 4. FAQ Accordion Toggle
@@ -59,18 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
+            
             // Close all other FAQs
             faqItems.forEach(i => {
                 i.classList.remove('active');
-                const icon = i.querySelector('i');
-                if(icon) icon.className = 'fas fa-chevron-down';
             });
             
-            // Open clicked FAQ
+            // Toggle current FAQ
             if (!isActive) {
                 item.classList.add('active');
-                const icon = item.querySelector('i');
-                if(icon) icon.className = 'fas fa-chevron-up';
             }
         });
     });
@@ -83,5 +85,35 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
+    });
+
+    // 6. Number Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // The lower the slower
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+                observer.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        counterObserver.observe(counter);
     });
 });

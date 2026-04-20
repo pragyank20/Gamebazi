@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gamebaazi - India's Most Trusted Gaming Platform. Get your Instant ID on WhatsApp, enjoy fast withdrawals, and 24x7 support.">
-    <title>Gamebaazi | Instant ID & Trusted Platform</title>
+    <meta name="description" content="Gamebazziworld - India's Most Trusted Gaming Platform. Get your Instant ID on WhatsApp, enjoy fast withdrawals, and 24x7 support.">
+    <title>Gamebazziworld | Instant ID & Trusted Platform</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,21 +19,27 @@
 </head>
 <body>
 
+    <!-- Animated Background Blobs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
     <!-- Header / Navigation -->
-    <header>
+    <header class="glass-header">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="fas fa-gamepad"></i> Game<span>Baazi</span>
+            <a href="#" class="logo fade-in-down" style="--anim-delay: 0.1s;">
+                <img src="gamebaazi.png" alt="Gamebazzi Logo" style="height: 45px; object-fit: contain;">
+                <span>Gamebazziworld</span>
             </a>
             
             <nav id="nav-links">
-                <a href="#home">Home</a>
-                <a href="#features">Why Us</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#faq">FAQ</a>
+                <a href="#home" class="fade-in-down" style="--anim-delay: 0.2s;">Home</a>
+                <a href="#features" class="fade-in-down" style="--anim-delay: 0.3s;">Why Us</a>
+                <a href="#how-it-works" class="fade-in-down" style="--anim-delay: 0.4s;">How It Works</a>
+                <a href="#faq" class="fade-in-down" style="--anim-delay: 0.5s;">FAQ</a>
             </nav>
 
-            <a href="#" class="btn-primary nav-btn wa-link">
+            <a href="#" class="btn-primary nav-btn wa-link fade-in-down" style="--anim-delay: 0.6s;">
                 <i class="fab fa-whatsapp"></i> Get ID
             </a>
 
@@ -45,31 +51,40 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="glow-bg"></div>
-        <div class="container hero-content">
-            <span class="badge fade-in">India's No. 1 Trusted Platform</span>
-            <h1 class="fade-in" style="transition-delay: 0.1s;">Experience The Thrill With <br><span class="text-gradient">GameBaazi</span></h1>
-            <p class="fade-in" style="transition-delay: 0.2s;">Get your ID instantly through WhatsApp. Fast withdrawals, 24x7 customer support, and completely secure platform.</p>
-            
-            <div class="hero-buttons fade-in" style="transition-delay: 0.3s;">
-                <a href="#" class="btn-primary btn-large wa-link">
-                    <i class="fab fa-whatsapp"></i> Message on WhatsApp
-                </a>
-                <a href="#how-it-works" class="btn-secondary btn-large">
-                    Learn More
-                </a>
+        <div class="container hero-content relative-z">
+            <div class="hero-text-wrapper">
+                <span class="badge fade-in-up" style="--anim-delay: 0.2s;">
+                    <i class="fas fa-star" style="color: #ffd700;"></i> India's Premium Gaming Platform
+                </span>
+                <h1 class="fade-in-up" style="--anim-delay: 0.4s;">
+                    Experience Next-Gen Thrills With <br>
+                    <span class="text-gradient glitch-effect" data-text="Gamebazziworld">Gamebazziworld</span>
+                </h1>
+                <p class="fade-in-up" style="--anim-delay: 0.6s;">Get your ID instantly via WhatsApp. Lightning-fast withdrawals, 24x7 premium support, and a completely secure ecosystem.</p>
+                
+                <div class="hero-buttons fade-in-up" style="--anim-delay: 0.8s;">
+                    <a href="#" class="btn-primary btn-large wa-link glow-btn">
+                        <i class="fab fa-whatsapp" style="font-size: 1.2em;"></i> Message on WhatsApp
+                    </a>
+                    <a href="#how-it-works" class="btn-secondary btn-large glass-btn">
+                        Learn More
+                    </a>
+                </div>
             </div>
 
-            <div class="stats-container fade-in" style="transition-delay: 0.4s;">
+            <div class="stats-container glass-card fade-in-up" style="--anim-delay: 1.0s;">
                 <div class="stat-box">
-                    <h3>50K+</h3>
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <h3><span class="counter" data-target="50">0</span>K+</h3>
                     <p>Active Users</p>
                 </div>
                 <div class="stat-box">
-                    <h3>2 Min</h3>
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                    <h3><span class="counter" data-target="2">0</span> Min</h3>
                     <p>Fast Withdrawals</p>
                 </div>
                 <div class="stat-box">
+                    <div class="stat-icon"><i class="fas fa-headset"></i></div>
                     <h3>24/7</h3>
                     <p>Live Support</p>
                 </div>
@@ -79,160 +94,172 @@
 
     <!-- Features Section / Why Us -->
     <section id="features" class="features section-padding">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Why Choose <span class="text-gradient">GameBaazi?</span></h2>
-                <p>Thousands of users trust us for our fast, secure, and reliable services.</p>
+        <div class="container relative-z">
+            <div class="section-header scroll-reveal">
+                <h2>Why Choose <span class="text-gradient">Gamebazziworld?</span></h2>
+                <p>Join thousands of elite players who trust our state-of-the-art secure platform.</p>
             </div>
             
             <div class="grid-features">
-                <div class="feature-card fade-in">
-                    <div class="icon-wrapper">
+                <div class="feature-card glass-card scroll-reveal tilt-card">
+                    <div class="icon-wrapper neon-green">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Instant ID</h3>
-                    <p>Get your ID instantly through WhatsApp with zero delay. No complicated sign-up processes.</p>
+                    <p>Seamless WhatsApp integration gives you instant access. No lengthy sign-ups.</p>
+                    <div class="card-glow"></div>
                 </div>
                 
-                <div class="feature-card fade-in" style="transition-delay: 0.1s;">
-                    <div class="icon-wrapper">
+                <div class="feature-card glass-card scroll-reveal tilt-card" style="transition-delay: 0.1s;">
+                    <div class="icon-wrapper neon-blue">
                         <i class="fas fa-wallet"></i>
                     </div>
                     <h3>Fast Withdrawals</h3>
-                    <p>Quick and smooth withdrawal process with full transparency directly to your bank or wallet.</p>
+                    <p>Automated, secure, and blazing-fast payouts directly to your preferred account.</p>
+                    <div class="card-glow"></div>
                 </div>
                 
-                <div class="feature-card fade-in" style="transition-delay: 0.2s;">
-                    <div class="icon-wrapper">
+                <div class="feature-card glass-card scroll-reveal tilt-card" style="transition-delay: 0.2s;">
+                    <div class="icon-wrapper neon-magenta">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>24x7 Support</h3>
-                    <p>Our dedicated support team is always available to assist you anytime, anywhere.</p>
+                    <p>VIP support at your fingertips. Our experts are always available to help.</p>
+                    <div class="card-glow"></div>
                 </div>
                 
-                <div class="feature-card fade-in" style="transition-delay: 0.3s;">
-                    <div class="icon-wrapper">
+                <div class="feature-card glass-card scroll-reveal tilt-card" style="transition-delay: 0.3s;">
+                    <div class="icon-wrapper neon-gold">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>100% Secure</h3>
-                    <p>Your data and transactions are processed through highly encrypted systems.</p>
+                    <p>Military-grade encryption protects your identity and funds at all times.</p>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="steps section-padding bg-darker">
+    <section id="how-it-works" class="steps section-padding relative-z">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>How To <span class="text-gradient">Start Playing?</span></h2>
-                <p>Follow these simple steps and get ready in minutes.</p>
+            <div class="section-header scroll-reveal">
+                <h2>Begin Your <span class="text-gradient">Journey</span></h2>
+                <p>Four simple steps stand between you and your next big win.</p>
             </div>
             
-            <div class="steps-container">
-                <div class="step-item fade-in">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Message Us on WhatsApp</h3>
-                        <p>Simply reach out to our dedicated WhatsApp support team by clicking the "Get ID" button.</p>
+            <div class="steps-container line-connecting">
+                <div class="step-item scroll-reveal hover-lift">
+                    <div class="step-number pulse-border">1</div>
+                    <div class="step-content glass-box">
+                        <h3>WhatsApp Us</h3>
+                        <p>Click any "Get ID" button to open a secure direct chat with our system.</p>
                     </div>
                 </div>
                 
-                <div class="step-item fade-in">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Share Information</h3>
-                        <p>Our team will provide you the details. Share minimal details to securely set up your account.</p>
+                <div class="step-item scroll-reveal hover-lift" style="transition-delay: 0.1s;">
+                    <div class="step-number pulse-border">2</div>
+                    <div class="step-content glass-box">
+                        <h3>Quick Setup</h3>
+                        <p>Provide basic details across our encrypted channel to create your profile.</p>
                     </div>
                 </div>
                 
-                <div class="step-item fade-in">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Deposit & Get ID</h3>
-                        <p>Choose your preferred payment method to deposit and receive your credentials instantly.</p>
+                <div class="step-item scroll-reveal hover-lift" style="transition-delay: 0.2s;">
+                    <div class="step-number pulse-border">3</div>
+                    <div class="step-content glass-box">
+                        <h3>Fund & Receive</h3>
+                        <p>Make a deposit using 100% safe payment gateways and get credentials instantly.</p>
                     </div>
                 </div>
                 
-                <div class="step-item fade-in">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Play & Win</h3>
-                        <p>Log in, play your favorite games, win big, and withdraw your winnings quickly!</p>
+                <div class="step-item scroll-reveal hover-lift" style="transition-delay: 0.3s;">
+                    <div class="step-number pulse-border">4</div>
+                    <div class="step-content glass-box">
+                        <h3>Dominate</h3>
+                        <p>Log in, play premium games, and withdraw massive winnings to your bank.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-5 fade-in">
-                <a href="#" class="btn-primary btn-large wa-link">
-                    <i class="fab fa-whatsapp"></i> Get Your ID Now
+            <div class="text-center mt-5 scroll-reveal">
+                <a href="#" class="btn-primary btn-large wa-link glow-btn pulse-anim">
+                    <i class="fab fa-whatsapp"></i> Get Your Premium ID Now
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Payment Methods -->
-    <section class="payments section-padding">
+    <section class="payments section-padding relative-z">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Supported Payment <span class="text-gradient">Methods</span></h2>
-                <p>We accept multiple payment options for your convenience.</p>
+            <div class="section-header scroll-reveal">
+                <h2>Lightning Fast <span class="text-gradient">Payments</span></h2>
+                <p>We leverage top-tier gateways for instant transactions.</p>
             </div>
             
-            <div class="payment-logos fade-in">
-                <div class="payment-card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="GPay" style="height: 30px; filter: brightness(0) invert(1);"></div>
-                <div class="payment-card"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/PhonePe_Logo.svg" alt="PhonePe" style="height: 30px; filter: brightness(0) invert(1);"></div>
-                <div class="payment-card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Paytm_Logo_%28standalone%29.svg" alt="Paytm" style="height: 25px; filter: brightness(0) invert(1);"></div>
-                <div class="payment-card"><i class="fas fa-university fa-2x"></i> <span>Bank Transfer</span></div>
+            <div class="payment-logos scroll-reveal">
+                <div class="payment-card glass-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="GPay"></div>
+                <div class="payment-card glass-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/PhonePe_Logo.svg" alt="PhonePe"></div>
+                <div class="payment-card glass-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Paytm_Logo_%28standalone%29.svg" alt="Paytm"></div>
+                <div class="payment-card glass-badge"><i class="fas fa-university fa-2x logo-icon"></i> <span>Bank Transfer</span></div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq section-padding bg-darker">
+    <section id="faq" class="faq section-padding relative-z">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
+            <div class="section-header scroll-reveal">
+                <h2>Got Questions? <span class="text-gradient">We Got Answers!</span></h2>
             </div>
             
             <div class="faq-container">
-                <div class="faq-item fade-in">
+                <div class="faq-item glass-accordion scroll-reveal">
                     <div class="faq-question">
                         <span>How quickly will I get my ID?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <div class="toggle-icon">
+                            <span class="horizontal"></span><span class="vertical"></span>
+                        </div>
                     </div>
                     <div class="faq-answer">
-                        <p>You will receive your ID within just 2 minutes after confirming your details and deposit over WhatsApp. Our process is optimized for speed.</p>
+                        <p>Speed is our specialty. You will receive your ID within just 2 minutes after confirming your details and deposit over WhatsApp.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item fade-in" style="transition-delay: 0.1s;">
+                <div class="faq-item glass-accordion scroll-reveal" style="transition-delay: 0.1s;">
                     <div class="faq-question">
-                        <span>Are my withdrawals instantaneous?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <span>Are my withdrawals truly instant?</span>
+                        <div class="toggle-icon">
+                            <span class="horizontal"></span><span class="vertical"></span>
+                        </div>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, E-wallet withdrawals (like GPay, PhonePe, Paytm) are processed almost instantly natively. Bank transfers might take a few minutes up to a couple of hours depending on the bank.</p>
+                        <p>Yes. E-wallet withdrawals (GPay, PhonePe, Paytm) trigger instantly. Bank transfers are incredibly fast, typically resolving in under 15 minutes.</p>
                     </div>
                 </div>
                 
-                <div class="faq-item fade-in" style="transition-delay: 0.2s;">
+                <div class="faq-item glass-accordion scroll-reveal" style="transition-delay: 0.2s;">
                     <div class="faq-question">
-                        <span>How can I withdraw my winnings?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <span>How do I process a withdrawal?</span>
+                        <div class="toggle-icon">
+                            <span class="horizontal"></span><span class="vertical"></span>
+                        </div>
                     </div>
                     <div class="faq-answer">
-                        <p>You can simply message us on WhatsApp with your withdrawal request! Click <a href="#" class="wa-withdraw-link" style="color:var(--primary); text-decoration:underline;">here</a> to send a withdrawal message directly.</p>
+                        <p>Message our active WhatsApp team! Click <a href="#" class="wa-withdraw-link neon-link">here</a> to send a withdrawal request directly, 24/7.</p>
                     </div>
                 </div>
 
-                <div class="faq-item fade-in" style="transition-delay: 0.3s;">
+                <div class="faq-item glass-accordion scroll-reveal" style="transition-delay: 0.3s;">
                     <div class="faq-question">
-                        <span>Is GameBaazi completely safe and secure?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <span>Is Gamebazziworld secure?</span>
+                        <div class="toggle-icon">
+                            <span class="horizontal"></span><span class="vertical"></span>
+                        </div>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! We enforce strict security protocols using end-to-end encryption for transactions and data protection, ensuring your experience is uncompromised.</p>
+                        <p>Absolutely. We operate isolated, highly-encrypted servers utilizing bank-grade protocols to protect every transaction and interaction.</p>
                     </div>
                 </div>
             </div>
@@ -240,13 +267,19 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="glass-footer relative-z">
         <div class="container footer-content">
-            <div class="footer-col">
+            <div class="footer-col brand-col">
                 <div class="logo">
-                    <i class="fas fa-gamepad"></i> Game<span>Baazi</span>
+                    <img src="gamebaazi.png" alt="Gamebazzi Logo">
+                    <span>Gamebazziworld</span>
                 </div>
-                <p>India's leading platform for fast, secure, and reliable ID creation and withdrawals.</p>
+                <p>The nexus of elite gaming. Fast, secure, reliable.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
             
             <div class="footer-col">
@@ -258,29 +291,31 @@
             </div>
             
             <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="#">Terms & Conditions</a>
+                <h4>Legal & Safety</h4>
+                <a href="#">Terms of Service</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Responsible Gaming</a>
             </div>
             
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p>Message us anytime!</p>
-                <a href="#" class="btn-primary wa-link mt-3" style="width: fit-content; padding: 0.5rem 1rem;">
-                    <i class="fab fa-whatsapp"></i> Message Us
+            <div class="footer-col contact-col">
+                <h4>Contact Us</h4>
+                <a href="#" class="btn-primary wa-link glow-btn contact-btn">
+                    <i class="fab fa-whatsapp"></i> Live Chat Now
                 </a>
             </div>
         </div>
         <div class="copyright text-center">
-            <p>&copy; 2026 GameBaazi. All Rights Reserved.</p>
+            <p>&copy; 2026 Gamebazziworld. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="#" class="floating-wa wa-link" title="Chat with us on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="#" class="floating-wa wa-link float-hover" title="Chat with us on WhatsApp">
+        <div class="wa-icon-wrapper">
+            <i class="fab fa-whatsapp"></i>
+        </div>
         <span class="pulsing-circle"></span>
+        <span class="pulsing-circle delayed"></span>
     </a>
 
     <!-- Configuration & Scripts -->
